@@ -1,0 +1,9 @@
+# Doc: https://docs.buf.build/usage/buf_gen_yaml/
+version: v1
+plugins:
+  - name: go # synonym with: protoc-gen-<name>
+    out: .
+    opt: paths=source_relative
+  - name: go-grpc
+    out: .
+    opt: paths=source_relative
